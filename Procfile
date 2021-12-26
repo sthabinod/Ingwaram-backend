@@ -1,0 +1,1 @@
+web:gunicorn Ingwaram_website --log-file-
