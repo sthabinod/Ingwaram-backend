@@ -1,0 +1,42 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+.content {
+    padding: $main-padding;
+    display: flex;
+    @include respond(tab-port) {
+        padding: 0px;
+        padding-top: 20px;
+    }
+    &__left-box {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+        @include respond(tab-port) {
+            margin: 0px;
+        }
+    }
+    &__card-left {
+        padding: 30px 30px 30px 30px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+    &__right-box {
+        flex: 1 0 30%;
+        display: flex;
+        flex-direction: column;
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+    &__img-event {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 1rem;
+    }
+    &__card-right {
+        padding: 30px 30px 30px 30px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+}

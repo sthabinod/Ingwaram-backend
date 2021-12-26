@@ -1,0 +1,30 @@
+{% load static %}
+<header class="header">
+    <div class="header__combine-top">
+        <div class="header__logo">
+            <a href="{% url 'index' %}"><img src="{% static './images/logo.jpg' %}" alt="" class="header__logo-img"></a>
+            <a href="{% url 'index' %}"><img src="{% static './images/name.png' %}" alt="" class="header__name-img"></a>
+
+        </div>
+        <div class="header__bar">
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-both">
+                <i class="fas fa-bars"></i>
+            </label>
+
+        </div>
+    </div>
+
+
+    <ul class="header__nav">
+        <li class="header__item"> <a href="{% url 'index' %}" class="header__link {% if request.resolver_match.url_name == 'index' %}  header__link-active  {% endif %}">Home</a> </li>
+        <li class="header__item"> <a href="{% url 'about' %}" class="header__link {% if request.resolver_match.url_name == 'about' %}  header__link-active  {% endif %}">About</a> </li>
+        <li class="header__item"> <a href="{% url 'gallery' %}" class="header__link {% if request.resolver_match.url_name == 'gallery' %}  header__link-active  {% endif %}">Gallery</a> </li>
+        <li class="header__item"> <a href="{% url 'gene' %}" class="header__link {% if request.resolver_match.url_name == 'gene' %} header__link-active{% endif %}">Generalogy</a> </li>
+        <li class="header__item"> <a href="{% url 'history' %}" class="header__link {% if request.resolver_match.url_name == 'history' %}  header__link-active  {% endif %}">Our History</a> </li>
+        <li class="header__item"> <a href="{% url 'writer' %}" class="header__link {% if request.resolver_match.url_name == 'writer' %}  header__link-active  {% endif %}">Writer Description</a> </li>
+        <li class="header__item"> <a href="{% url 'front_person' %}" class="header__link {% if request.resolver_match.url_name == 'front_person' %}  header__link-active  {% endif %}">Front Person</a> </li>
+        <li class="header__item"> <a href="{% url 'contact' %}" class="header__link {% if request.resolver_match.url_name == 'contact' %}  header__link-active  {% endif %}">Contact us</a> </li>
+    </ul>
+
+</header>

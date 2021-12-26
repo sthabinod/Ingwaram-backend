@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA;;EAEE;ADAG,AAAD,iBAAa,CAAC;EACV,YAAY,EAAE,IAAI;EAClB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;EACV,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,CAAC;EACV,YAAY,EAAE,OAAO;EACrB,YAAY,EAAE,OAAO;EACrB,OAAO,EAAE,EAAE;EACX,UAAU,EAAE,QAAQ;CAIvB;;AAbA,AAUG,iBAVS,AAUR,MAAM,CAAC;EACJ,YAAY,EAAE,IAAI;CACrB",
+    "sources": [
+        "input.scss",
+        "../abstracts/_variable.scss"
+    ],
+    "names": [],
+    "file": "input.css"
+}

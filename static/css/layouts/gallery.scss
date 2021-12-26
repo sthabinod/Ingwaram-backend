@@ -1,0 +1,14 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+.container-gallery {
+    padding: 40px 70px 40px 70px;
+    &__image {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+.color-white {
+    color: white;
+}

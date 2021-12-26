@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% block content %} {% include 'nav.html' %}
+<figure>
+    <figcaption>Example sitemap</figcaption>
+    <ul class="tree">
+        <li><span>Home</span>
+            <ul>
+                <li><span>About us</span>
+                    <ul>
+
+                        <li><span>Our board</span>
+
+                        </li>
+                    </ul>
+                </li>
+                <li><span>Our products</span>
+                    <ul>
+
+                        <li><span>The McGuffin V2</span>
+                            <ul>
+                                <li><span>Order form</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span>Contact us</span>
+                    <ul>
+
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</figure>
+<p><a href="https://medium.com/@ross.angus/sitemaps-and-dom-structure-from-nested-unordered-lists-eab2b02950cf" target="_blank">Full writeup</a></p>
+<!-- partial -->
+{% endblock %}

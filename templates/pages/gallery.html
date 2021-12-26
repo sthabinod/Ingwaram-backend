@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="main-box">
+    {% include 'nav.html' %}
+
+    <section>
+        <ul>
+            <li class="list" data-filter="All">All</li>
+
+            {% for event in events %}
+            <li class="list" data-filter="{{event.title}}">{{event.title}}</li>
+            {% endfor %}
+        </ul>
+        <div class="product">
+            <div class="itemBox {{event.title}}"><img class="image" src="{% static 'images/event.jpeg' %}" alt=""></div>
+            <div class="itemBox {{event.title}}"><img class="image" src="{% static 'images/image.jpg' %}" alt=""></div>
+            <div class="itemBox {{event.title}}"><img class="image" src="{% static 'images/img5.jpg' %}" alt=""></div>
+            <div class="itemBox laptop"><img class="image" src="{% static 'images/img4.jpg' %}" alt=""></div>
+            <div class="itemBox pc"><img class="image" src="{% static 'images/img2.jpg' %}" alt=""></div>
+
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    {% endblock %}

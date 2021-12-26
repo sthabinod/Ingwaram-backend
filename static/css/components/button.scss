@@ -1,0 +1,25 @@
+@import "../abstracts/variable";
+.button {
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    &--read-more {
+        color: white;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        float: right;
+        font-size: 1.1rem;
+    }
+    &--back-color-blue {
+        background-color: $blue-dark-1;
+    }
+    &:hover {
+        animation: buttonUp 1s;
+    }
+    &__contact {
+        color: white;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        font-size: 1rem;
+        background-color: #eb2f64;
+        width: 90%;
+    }
+}

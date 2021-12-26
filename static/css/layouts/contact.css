@@ -1,0 +1,56 @@
+/*
+COLORS
+*/
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__left-contact {
+  margin-right: 40px;
+  background-color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
+@media (max-width: 900px) {
+  .content__left-contact {
+    margin-right: 0;
+  }
+}
+
+.content__right-contact {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+@media (max-width: 900px) {
+  .content__right-contact {
+    display: none;
+  }
+}
+
+.content__card-left-contact {
+  padding: 30px 30px 30px 30px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.content__card-right-contact {
+  padding: 30px 30px 30px 30px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.header__name-img {
+  height: 50px;
+}
+
+.contact-i {
+  margin-right: 20px;
+  color: #10559A;
+}
+/*# sourceMappingURL=contact.css.map */

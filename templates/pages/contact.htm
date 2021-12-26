@@ -1,0 +1,59 @@
+{% extends 'base.html' %} {% block content %}
+<div class="main-box">
+    {% include 'nav.html' %}
+    <div class="content">
+        <div class="content__left-contact">
+            <div class="content__card-left-contact">
+                <h1 class="heading heading--contact">Contact us</h1>
+                <p> <b>{{message_sent}}</b></p><br>
+                <form action="" class="form" method="POST">
+                    {% csrf_token %}
+                    <div class="form__control">
+                        <label for="" class="form__label-name">Fullname</label> <br>
+                        <input name="name" type="text" required class="form__input-name" placeholder="Fullname">
+                    </div>
+                    <div class="form__control">
+                        <label for="" class="form__label-name">Email address</label> <br>
+                        <input type="email" name="email" required class="form__input-name" placeholder="Email address">
+                    </div>
+
+                    <div class="form__control">
+                        <label for="" class="form__label-name">Phone Number</label> <br>
+                        <input type="text" name="phone_number" required class="form__input-name" placeholder="Phone Number">
+                    </div>
+                    <div class="form__control">
+                        <label for="" class="form__label-name">Subject</label> <br>
+                        <input name="subject" type="text" required class="form__input-name" placeholder="Subject">
+                    </div>
+                    <div class="form__control">
+                        <label for="" class="form__label-name">Message</label> <br>
+                        <input name="message" type="text" required class="form__input-name" placeholder="Message">
+                    </div>
+                    <br>
+                    <div class="form__button">
+                        <button class="button button__contact">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="content__right-contact">
+            <div class="content__card-right-contact">
+                <h2 class="heading--help">How can We help?</h2>
+                <p class="pararaph--description">Ingwaram Samaj is a website where people can help to find one's solution to the generation and make good understanding about the problem related to relation.</p>
+                <br>
+                <div class="content__contact-details">
+                    <p class="paragraph--con"><i class="fas fa-phone contact-i"></i> <b>Telephone Number:</b> <span class="paragraph--contact">{{company.phone_number}}</span></p>
+                    <p class="paragraph--con"><i class="fas fa-sms contact-i"></i> <b>Mobile number:</b> <span class="paragraph--contact">{{company.mobile_number}}</span></p>
+                    <p class="paragraph--con"> <i class="fas fa-address-book contact-i"></i><b>Address:</b><span class="paragraph--contact">{{company.address}}</span> </p>
+                    <p class="paragraph--con"><i class="fas fa-envelope contact-i"></i> <b>Email Address:</b> <span class="paragraph--contact">{{company.email}}m</span></p>
+                    <p class="paragraph--con"><i class="fas fa-globe contact-i"></i> <b>Website:</b> <span class="paragraph--contact">{{company.website}}</span></p>
+                    <p class="paragraph--con"> <i class="fas fa-long-arrow-alt-right contact-i"></i><b>Name:</b> <span class="paragraph--contact">{{company.name}}</span></p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

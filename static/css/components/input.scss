@@ -1,0 +1,17 @@
+@import "../abstracts/variable";
+.form {
+    &__input-name {
+        padding-left: 10px;
+        height: 30px;
+        width: 90%;
+        font-size: 11px;
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: #eb2f64;
+        opacity: .6;
+        transition: all 0.5s;
+        &:focus {
+            border-color: blue;
+        }
+    }
+}

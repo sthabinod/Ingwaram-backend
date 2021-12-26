@@ -1,0 +1,30 @@
+@import "../abstracts/variable";
+.heading {
+    &--event {
+        color: $primary-dark;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-bottom: 0.3rem;
+    }
+    &__footer {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.paragraph {
+    &--event-details {
+        color: $grey-dark-2;
+        font-style: italic;
+    }
+    &--description {
+        text-align: justify;
+    }
+    &--contact {
+        margin-left: 30px;
+    }
+    &--con {
+        padding: 7px;
+    }
+}

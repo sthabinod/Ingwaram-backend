@@ -1,0 +1,40 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+.content {
+    display: flex;
+    &__left-contact {
+        margin-right: 40px;
+        background-color: white;
+        flex: 1 0 50%;
+        @include respond(tab-port) {
+            margin-right: 0;
+        }
+    }
+    &__right-contact {
+        flex: 0 0 50%;
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+    &__card-left-contact {
+        padding: 30px 30px 30px 30px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+    &__card-right-contact {
+        padding: 30px 30px 30px 30px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+}
+
+.header {
+    &__name-img {
+        height: 50px;
+    }
+}
+
+.contact-i {
+    margin-right: 20px;
+    color: $blue-dark-1;
+}

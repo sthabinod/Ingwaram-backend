@@ -1,0 +1,34 @@
+{% extends 'base.html' %} {% block content %}
+<div class="main-box">
+    {% include 'nav.html' %}
+    <div class="content">
+        <div class="content__left-box">
+            <div class="content__card-left">
+                <h2 class="heading heading--event">References Book Writer Introduction</h2>
+                <p class="paragraph paragraph--event-details"> {{writer.name}}</p>
+                <p class="paragraph paragraph--event-details"> <b>Father:</b>{{writer.father}}</p>
+                <p class="paragraph paragraph--event-details"> <b>Mother:</b>{{writer.mother}}</p>
+                <p class="paragraph paragraph--description">{{writer.description}} </p>
+            </div>
+
+
+
+        </div>
+
+        <div class="content__right-box">
+            <div class="content__card-right">
+                <h2 class="heading heading--event">Our book writer </h2>
+                <img src="{{writer.image.url}}" alt="" class="content__img-event">
+                <p class="paragraph paragraph--description">{{writer.name}}
+                </p>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+</div>
+{% endblock %}

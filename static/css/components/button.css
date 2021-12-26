@@ -1,0 +1,33 @@
+/*
+COLORS
+*/
+.button {
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.button--read-more {
+  color: white;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  float: right;
+  font-size: 1.1rem;
+}
+
+.button--back-color-blue {
+  background-color: #10559A;
+}
+
+.button:hover {
+  -webkit-animation: buttonUp 1s;
+          animation: buttonUp 1s;
+}
+
+.button__contact {
+  color: white;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  font-size: 1rem;
+  background-color: #eb2f64;
+  width: 90%;
+}
+/*# sourceMappingURL=button.css.map */

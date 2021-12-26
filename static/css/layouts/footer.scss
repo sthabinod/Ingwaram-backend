@@ -1,0 +1,35 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+.footer {
+    display: flex;
+    background-color: $grey-dark-1;
+    padding: $main-padding;
+    justify-content: space-between;
+    @include respond(tab-port) {
+        display: none;
+    }
+    &__img-logos {
+        height: 11rem;
+    }
+    &__column {
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        list-style: none;
+    }
+    &__sm {
+        display: flex;
+        justify-content: space-around;
+        font-size: 2.1rem;
+    }
+    &__sm i {
+        padding-left: 15px;
+        cursor: pointer;
+    }
+    &__sm i:hover {
+        color: $blue-dark-1;
+        transform: scale(1.2);
+    }
+}
