@@ -1,1 +1,1 @@
-web:gunicorn Ingwaram_website.wsgi --log-file-
+web:gunicorn Ingwaram_website --log-file-
