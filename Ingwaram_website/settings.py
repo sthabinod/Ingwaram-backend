@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-cj1yt6or)jsn628etgys#p$z75=hq8!%d=i))-73pc_)1flkv8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["chetanabachat.herokuapp.com","127.0.0.1"]
+ALLOWED_HOSTS = ['chetanabachat.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -121,10 +121,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR/'staticfiles')
 STATICFILES_DIRS = [
     BASE_DIR/"static"
 ]
